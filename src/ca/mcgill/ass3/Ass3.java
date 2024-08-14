@@ -28,6 +28,10 @@ public class Ass3 {
         }
     }
 
+   /* Create a method to print the following image. This method must have one parameter, which is the length
+    of the sides in number of *’s. This method should use only two for loops, and use if statements within the for
+    loops to decide whether to draw a space or a star. You can assume the parameter is an odd number.*/
+
     public static void q1(int n) {
         for (int i = 0; i < n; i++) {
             for (int j = 0; j < n; j++) {
@@ -48,6 +52,9 @@ public class Ass3 {
         }
     }
 
+    /*Change the method you just created to have two parameters, so that you can create rectangles. The first
+parameter will be the height of the rectangle, and the second parameter will be the width of the rectangle*/
+
     public static void q2(int n, int m) {
         for (int i = 0; i < n; i++) {
             for (int j = 0; j < m; j++) {
@@ -66,6 +73,10 @@ public class Ass3 {
         }
     }
 
+    /*Write a method generateRandomArray() that takes as input an integer n and returns an array of size
+n. The elements of the array should be random doubles between 0 (included) and 5 (excluded). You can use
+Math.random() to do this.*/
+
     public static double[] q4(int n) {
         double[] array = new double[n];
         for (int i = 0; i < n; i++) {
@@ -74,6 +85,9 @@ public class Ass3 {
         return array;
     }
 
+    /*Write a method getLargestElement() that takes an array of integers as input and returns the largest element
+inside the array. For example, if the input is: int[] arr= {1, 5, -3, 15, 4}; then getLargestElement(arr) should
+return 15.*/
 
     public static int q5(int[] array) {
         int max = array[0];
@@ -94,6 +108,11 @@ public class Ass3 {
 //        }return max;
     // }
     //}
+
+    /*Write a method getSum() that takes an array of integers as input and returns the sum of all the elements inside
+the array. For example, if the input is:
+int[] arr= {1, 5,-3, 15, 4};*/
+
     public static int q6(int[] array) {
         int sum = 0;
         for (int element : array) {
@@ -102,6 +121,10 @@ public class Ass3 {
         }
         return sum;
     }
+
+    /*Write a method countNegatives() that takes an array of integers as input and returns the number of negative
+numbers inside the array. For example, if the input is:
+int[] arr= {1,5,-3, 15, -13}; */
 
     public static int q7(int[] array) {
         int count = 0;
@@ -113,20 +136,11 @@ public class Ass3 {
         return count;
     }
 
-    public static Character[] q8(String string) {
 
-        List<Character> list = new ArrayList<Character>();
-
-        for (int i = 0; i < string.length(); i++) {
-
-            char c = string.charAt(i);
-            if (c == 'a' || c == 'e' || c == 'i' || c == 'o' || c == 'u') {
-                list.add(c);
-
-            }
-        }
-        return list.toArray(new Character[0]);
-    }
+    /*Write a method getVowels() that takes a String as input and returns an array characters containing all the
+vowels from the given string. For example, if the input is:
+String s = "kangaroo";
+then getVowels(s) should return {‘a’, ‘a’, ‘o’, ‘o’}*/
 
     public static char[] quest8(String string) {
         String vowels="aeiouAEIOU";
