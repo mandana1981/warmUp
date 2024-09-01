@@ -8,7 +8,7 @@ import java.util.Collections;
 import java.util.Comparator;
 
 
-public class Q4To {
+public class Q4To6 {
     public static void main(String[] args) {
         ArrayList<String> lines = new ArrayList<>();
         lines.add("i am mandana and i have 43 years old");
